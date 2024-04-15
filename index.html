@@ -1,1 +1,250 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasir Zafar Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css">
+    <!-- Adding Font Awesome -->
+    <script src="https://kit.fontawesome.com/863db45ed7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- TODO - Add BGpic of myself -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p id="icon">Yasir.</p>
+                <!-- Added the "sidemenu" id for my javascript -->
+                <ul id="sidemenu" class="snip1189">
+                    <!-- Added links to the id's of the places we wanted to scroll to, then made scroll behavior in CSS -->
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Added below line for smaller screen -->
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    <!-- anded onlick and gave it a function to activate -->
+                </ul>
+                <!-- Added below line for smaller screen -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <!-- anded onlick and gave it a function to activate -->
+            </nav>
+            <div class="header-text">
+                <p>+3 YEARS OF EXPERIENCE</p>
+                <h1><span>Yasir Zafar</span><br>Cloud and Web Specialist</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpeg">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Greetings! I'm Yasir Zafar, a dedicated Cloud and Web Specialist with a strong focus on Azure
+                        solutions. With a background in government contracting, I excel in architecting robust digital
+                        infrastructures tailored for public sector projects. My expertise lies in crafting scalable
+                        cloud solutions, optimizing deployments, and designing web applications. I thrive on delivering
+                        results that exceed expectations, driven by a commitment to collaboration and client
+                        satisfaction. Beyond technology, I enjoy exploring the outdoors, culinary delights, and
+                        captivating literature. Let's connect and explore how we can propel your projects to new
+                        heights.
+                    </p>
+                    <!-- Tab Links -->
+                    <div class="tab-titles">
+                        <!-- opentab is the function name -->
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Cloud Administration</span><br>Managing Resources Within Azure Services</li>
+                            <li><span>Web App Development</span><br>Designing Web/App Interfaces</li>
+                            <li><span>DevOps Managment</span><br>Developing Work Pipelines</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>US Army</span><br>Developed 4 Seemless Websites For DoD</li>
+                            <li><span>NCHS</span><br>Blah about NCHS</li>
+                            <li><span>ARMY</span><br>BLAH About army</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>George Mason University</span><br>Bachelors in Biology (3.8 GPA)</li>
+                            <li><span>Coding Dojo Bootcamp</span><br>Earned Wed Development Certification</li>
+                            <li><span>Personal Projects</span><br>My Personal Projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Microsoft Azure Administrator</span><br>Expected Completion Date: 11/15/2023</li>
+                            <li><span>CompTIA Security+</span><br>Expiration Date: </li>
+                            <li><span>Microsoft Azure Fundamentals</span><br>Expiration: N/A</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div id="services" class="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-dev"></i>
+                    <h2>DevOps</h2>
+                    <p>At the core of my offerings are comprehensive DevOps services crafted to empower businesses and
+                        individuals in streamlining their software development processes. Leveraging my expertise in
+                        DevOps methodologies and tools, I provide tailored solutions that cater to diverse needs and
+                        objectives. Whether it's implementing continuous integration and delivery pipelines, automating
+                        infrastructure provisioning and deployment, or optimizing workflows for enhanced collaboration
+                        and efficiency, my approach is grounded in clear communication and collaboration. I prioritize
+                        understanding client requirements thoroughly, ensuring that each solution is meticulously
+                        designed to align with their specific goals and industry standards. From initial assessment to
+                        ongoing support, I am dedicated to delivering exceptional DevOps services that drive success and
+                        innovation in today's fast-paced digital landscape.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Administration</h2>
+                    <p>At the core of my offerings are comprehensive cloud administration services tailored to empower
+                        businesses and individuals in managing their digital infrastructure seamlessly. Leveraging my
+                        expertise in cloud technologies, I provide tailored solutions that cater to diverse needs and
+                        objectives. Whether it's setting up scalable and secure cloud environments, optimizing existing
+                        infrastructures for efficiency, or implementing advanced security measures to safeguard data, my
+                        approach is grounded in clear communication and collaboration. I prioritize understanding client
+                        requirements thoroughly, ensuring that each solution is meticulously designed to align with
+                        their specific goals and industry standards. From initial setup to ongoing maintenance and
+                        support, I am dedicated to delivering exceptional cloud administration services that drive
+                        success in today's dynamic digital landscape.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        At the core of my offerings are comprehensive web development services crafted to empower
+                        businesses and individuals in the digital sphere. Leveraging my expertise in web technologies, I
+                        provide tailored solutions that cater to diverse needs and objectives. Whether it's building
+                        responsive and visually appealing websites from scratch, optimizing existing platforms for
+                        enhanced performance, or integrating cutting-edge functionalities to drive user engagement and
+                        conversions, my approach is rooted in a deep understanding of client requirements and industry
+                        best practices. I prioritize collaboration and clear communication throughout the entire
+                        process, ensuring that each project is meticulously crafted to align with the client's vision
+                        and objectives. From concept to deployment and beyond, I am committed to delivering exceptional
+                        web development services that exceed expectations and drive tangible results in the
+                        ever-evolving digital landscape.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>DCS, G-9</h3>
+                        <p>DCS, G-9's website offers a seamless blend of intuitive design and comprehensive information tailored to meet the needs of its users.</p>
+                        <a href="https://dcsg9.army.mil/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Ready army</h3>
+                        <p>The Ready Army website equips users with essential resources and information to prepare for emergencies and promote resilience.</p>
+                        <a href="https://ready.army.mil/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>ASA(IE&E)</h3>
+                        <p>The ASA(IE&E) website provides a user-friendly interface and valuable resources for navigating acquisition and sustainment processes efficiently.</p>
+                        <a href="https://www.asaie.army.mil/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> yzyasirzafar@email.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 703-371-1140</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yzyasir/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <a href="docs/Yasir_Zafar_Resume.pdf" target="_blank" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; of Yasir.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links') //3 tab title class declared
+        var tabcontents = document.getElementsByClassName('tab-contents') //3 tab content classes declared
+
+        console.dir(tablinks); // console. dir() method is used to get the list of object properties of a specified object. These object properties also have child objects, from which you can inspect for further information.
+
+        // Function needs to hide the link underline, and tab contents in the page
+        function opentab(tabname) { //passing in tab name
+            for (tablink of tablinks) { //tablinks which is defined above needs to be iterated in this for loop
+                tablink.classList.remove("active-link"); //Need to remove the active-link case on tab titles
+            }
+            for (tabcontent of tabcontents) { //tabvontents which is defined above needs to be iterated in this for loop
+                tabcontent.classList.remove("active-tab"); //Need to remove the active-tab case on tab contents
+            }
+            // Need to add an event where when you click something a link it will become active
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById('sidemenu');
+
+        function openmenu() {
+            sidemenu.style.right = '0'; //Whenever right is 0, it will be visible
+        }
+        function closemenu() {
+            sidemenu.style.right = '-200px'; //Whenever right is 0, it will be visible
+        }
+    </script>
+</body>
+
+</html>
