@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yasir Zafar Portfolio</title>
-
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="CSS/Style.css">
     <!-- Adding Font Awesome -->
     <script src="https://kit.fontawesome.com/863db45ed7.js" crossorigin="anonymous"></script>
@@ -14,29 +18,65 @@
 <body>
     <!-- TODO - Add BGpic of myself -->
     <div id="header">
-        <div class="container">
-            <nav>
-                <p id="icon">Yasir.</p>
-                <!-- Added the "sidemenu" id for my javascript -->
-                <ul id="sidemenu" class="snip1189">
-                    <!-- Added links to the id's of the places we wanted to scroll to, then made scroll behavior in CSS -->
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <!-- Added below line for smaller screen -->
-                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
-                    <!-- anded onlick and gave it a function to activate -->
-                </ul>
+        <nav>
+            <!-- Added the "sidemenu" id for my javascript -->
+            <ul id="sidemenu" class="snip1189">
+                <!-- Added links to the id's of the places we wanted to scroll to, then made scroll behavior in CSS -->
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <!-- Added below line for smaller screen -->
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
                 <!-- anded onlick and gave it a function to activate -->
-            </nav>
-            <div class="header-text">
-                <p>+3 YEARS OF EXPERIENCE</p>
-                <h1><span>Yasir Zafar</span><br>Cloud and Web Specialist</h1>
+            </ul>
+            <!-- Added below line for smaller screen -->
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <!-- anded onlick and gave it a function to activate -->
+        </nav>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Images/background.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="slider_title">Tech Visionary at Your Service</h5>
+                        <h6>Cloud Administration <span>|</span> Web Development <span>|</span> DevOps <span>|</span> Web Design</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/background_y.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="slider_title">Design Architect for Success</h5>
+                        <h6>Cloud Administration <span>|</span> Web Development <span>|</span> DevOps <span>|</span> Web Design</h6>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/background_z.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="slider_title">Driving Change, Empowering Teams</h5>
+                        <h6>Cloud Administration <span>|</span> Web Development <span>|</span> DevOps <span>|</span> Web Design</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button> -->
         </div>
     </div>
     <!-- About Section -->
@@ -152,7 +192,7 @@
                         ever-evolving digital landscape.
                     </p>
                     <a href="#">Learn More</a>
-                </div>    
+                </div>
             </div>
         </div>
     </div>
@@ -165,7 +205,8 @@
                     <img src="Images/work-1.jpg">
                     <div class="layer">
                         <h3>DCS, G-9</h3>
-                        <p>DCS, G-9's website offers a seamless blend of intuitive design and comprehensive information tailored to meet the needs of its users.</p>
+                        <p>DCS, G-9's website offers a seamless blend of intuitive design and comprehensive information
+                            tailored to meet the needs of its users.</p>
                         <a href="https://dcsg9.army.mil/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -173,7 +214,8 @@
                     <img src="Images/work-3.png">
                     <div class="layer">
                         <h3>Ready Army</h3>
-                        <p>The Ready Army website equips users with essential resources and information to prepare for emergencies and promote resilience.</p>
+                        <p>The Ready Army website equips users with essential resources and information to prepare for
+                            emergencies and promote resilience.</p>
                         <a href="https://ready.army.mil/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -181,7 +223,8 @@
                     <img src="Images/work-2.jpg">
                     <div class="layer">
                         <h3>ASA(IE&E)</h3>
-                        <p>The ASA(IE&E) website provides a user-friendly interface and valuable resources for navigating acquisition and sustainment processes efficiently.</p>
+                        <p>The ASA(IE&E) website provides a user-friendly interface and valuable resources for
+                            navigating acquisition and sustainment processes efficiently.</p>
                         <a href="https://www.asaie.army.mil/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
@@ -216,6 +259,14 @@
             <p>Copyright &copy; of Yasir.</p>
         </div>
     </div>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script> 
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+	</script> 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+	</script>
+    <!--  -->
     <script>
         var tablinks = document.getElementsByClassName('tab-links') //3 tab title class declared
         var tabcontents = document.getElementsByClassName('tab-contents') //3 tab content classes declared
